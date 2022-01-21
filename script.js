@@ -14,3 +14,14 @@ for (let x = 0; x < 16; x++) {
 
 const gridBoxes = document.querySelectorAll('.boxes');
 gridBoxes.forEach(box => box.addEventListener('mouseenter',e => e.target.classList.add('hover')));
+
+const clearButton = document.querySelector('.clear');
+
+clearButton.addEventListener('click',removeClass);
+
+function removeClass() {
+    for (let index = 0; index < gridBoxes.length; index++) {
+        gridBoxes[index].classList.remove('hover');
+    }
+    
+}
