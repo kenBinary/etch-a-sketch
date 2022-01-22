@@ -5,6 +5,10 @@ h1{
     text-align: center;
 
 }
+.clear{
+    display: flex;
+    margin: auto;
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -12,6 +16,7 @@ h1{
     width: 450px;
     height: 450px;
     border: 1px solid black;
+    margin: auto;
 
 }
 .container > div {
